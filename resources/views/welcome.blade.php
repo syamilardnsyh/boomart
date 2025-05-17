@@ -45,7 +45,7 @@
     </button>
 </div>
 <div class="relative mx-auto mb-4 flex items-center justify-betweeen" data-testid="productSliderBannerBestSellerBookTitleContainer">
-    <span class="max-w-[90%] truncate text-neutral-800 text-2xl-extrabold" data-testid="productSliderBannerBestSellerBookTitle">Buku Favorite</span>
+    <span class="max-w-[90%] truncate text-neutral-800 text-2xl-extrabold" data-testid="productSliderBannerBestSellerBookTitle"><h3 style="text-align:center; background-color:green;">Buku Favorite</h3></span>
 </div>
 <div class="container overflow-auto">
     <div class="row flex-nowrap">

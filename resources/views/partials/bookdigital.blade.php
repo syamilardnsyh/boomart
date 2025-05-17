@@ -3,7 +3,7 @@
     Book Digital
 @endsection
 @section('content')
-<h2> Book Digital</h2>
+<h3 style="text-align:center; background-color:green"> Book Digital </h3>
 <body>
     <div class="container overflow-auto">
     <div class="row flex-nowrap">

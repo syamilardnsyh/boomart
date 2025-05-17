@@ -3,7 +3,7 @@
     Mainan & Hobby
 @endsection
 @section('content')
-<h2> Mainan & Hobby</h2>
+<h3 style="text-align:center; background-color:green"> Mainan & Hobby </h3>
 <body>
     <div class="container overflow-auto">
     <div class="row flex-nowrap">

@@ -3,7 +3,7 @@
     Serba 10.000
 @endsection
 @section('content')
-<h2> Serba 10.000 </h2>
+<h3 style="text-align:center; background-color:green"> Serba 10.000 </h3>
 <body>
     <div class="container overflow-auto">
     <div class="row flex-nowrap">
