@@ -72,6 +72,9 @@
                     <li class="nav-item">
                       <a href="/mainanhobi" class="nav-link">Mainan & Hobi</a>
                     </li>
+                    <li class="nav-item">
+                      <a href="{{ route('produk.create') }}" class="nav-link">Tambah Produk</a>
+                    </li>
                 </div>
               </div>
               </div>

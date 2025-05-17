@@ -47,6 +47,27 @@
 <div class="relative mx-auto mb-4 flex items-center justify-betweeen" data-testid="productSliderBannerBestSellerBookTitleContainer">
     <span class="max-w-[90%] truncate text-neutral-800 text-2xl-extrabold" data-testid="productSliderBannerBestSellerBookTitle"><h3 style="text-align:center; background-color:green;">Buku Favorite</h3></span>
 </div>
+<div class="container mb-4">
+    <div class="row g-2">
+        @foreach ($produk as $data)
+        <div class="col-4">
+            <div class="card">
+                <div class="card-body">
+                    <p>Nama : {{ $data->nama }}</p>
+                    <p>Harga : {{ $data->harga }}</p>
+                    <p>Deskripsi : {{ $data->deskripsi }}</p>
+                    <div class="hstack gap-2">
+                        <a href="{{ route('produk.edit', $data->id) }}" class="btn btn-warning">Edit</a>
+                        <form action="{{ route('produk.destroy', $data->id) }}" method="post">
+                            @csrf
+                            @method('DELETE')
+                            <button type="submit" onclick="confirm('Apakah ingin menghapus data?')" class="btn btn-danger">Hapus</buttona->
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        @endforeach
 <div class="container overflow-auto">
     <div class="row flex-nowrap">
         <div class="col-md-auto mb-3 me-3">

@@ -73,26 +73,30 @@ class AuthController extends Controller
 
     public function showprofil()
     {
+        // dump(auth()->user());
         return view('auth.profile');
     }
 
     public function updateprofil(Request $request)
     {
-        $request->validate([
-            'name' => 'required|min:5',
-            'email' => 'required|email',
-            'password' => 'required|min:8'
-        ]);
+        // $request->validate([
+        //     'name' => 'required|min:5',
+        //     'email' => 'required|email',
+        //     'password' => 'required|min:8'
+        // ]);
 
-        $userCount = User::count();
-
-        $user->name = $request->input('username');
-        $user->email = $request->input('email');
-        $user->password = Hash::make($request->input('password'));
-
-        $users = DB::table('users')->get();
-
+        $user = $request->user();
+        $user->fill($request->all());
         $user->save();
+        // $userCount = User::count();
+
+        // $user->name = $request->input('username');
+        // $user->email = $request->input('email');
+        // $user->password = Hash::make($request->input('password'));
+
+        // $users = DB::table('users')->get();
+
+        // $user->save();
 
         return redirect('/profil')->with('success', 'Berhasil Update Profil');
     }

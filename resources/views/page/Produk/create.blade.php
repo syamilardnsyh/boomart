@@ -4,7 +4,7 @@
 @endsection
 @section('content')
 <body>
-    <form method="POST" action="{{ route('updateprofile') }}">
+    <form method="POST" action="{{ route('produk.store') }}">
     @csrf
     
     @if (session('success'))
@@ -15,18 +15,18 @@
     
 
             <div class="mb-3">
-                <label for="name" class="form-label">Username</label>
-                <input type="text" class="form-control" name="name">
+                <label for="nama" class="form-label">Nama Produk</label>
+                <input type="text" class="form-control" name="nama">
             </div>
 
             <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" name="email">
+                <label for="harga" class="form-label">Harga</label>
+                <input type="number" min="1" class="form-control" name="harga">
             </div>
 
             <div class="mb-3">
-                <label for="alamat" class="form-label">Password</label>
-                <input type="password" class="form-control" name="password">
+                <label for="deskripsi" class="form-label">Deskripsi</label>
+                <input type="text" class="form-control" name="deskripsi">
             </div>
 
             <button type="submit" class="btn btn-primary">Simpan Perubahan</button>
