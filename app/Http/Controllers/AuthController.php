@@ -96,4 +96,19 @@ class AuthController extends Controller
 
         return redirect('/profil')->with('success', 'Berhasil Update Profil');
     }
+
+    public function serba10k()
+    {
+        return view('partials.serba');
+    }
+
+    public function bookdigital()
+    {
+        return view('partials.bookdigital');
+    }
+
+    public function mainanhobi()
+    {
+        return view('partials.mainanhobby');
+    }
 }

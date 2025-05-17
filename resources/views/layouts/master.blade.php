@@ -61,31 +61,19 @@
                 <div class="offcanvas-header justify-content-center">
                   <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-
-                <div class="offcanvas-body">
-                  <select class="filter-categories border-0 mb-0 me-5">
-                    <option>Buku</option>
-                    <option>Ebook</option>
-                    <option>International Book</option>
-                    <option>Majalah</option>
-                  </select>
-              
+                <div class="justify-content-center justify-content-sm-between align-items-center">
                   <ul class="navbar-nav justify-content-end menu-list list-unstyled d-flex gap-md-3 mb-0">
                     <li class="nav-item active">
-                      <a href="#serba10k" class="nav-link">Serba 10.000</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a href="#bukubaru" class="nav-link">Buku Baru Favorit</a>
+                      <a href="/serba10k" class="nav-link">Serba 10.000</a>
                     </li>
                     <li class="nav-item">
-                      <a href="#bookdigital" class="nav-link">BookMart Digital</a>
+                      <a href="/bookdigital" class="nav-link">BookMart Digital</a>
                     </li>
                     <li class="nav-item">
-                      <a href="#mainan" class="nav-link">Mainan & Hobi</a>
+                      <a href="/mainanhobi" class="nav-link">Mainan & Hobi</a>
                     </li>
-                
                 </div>
-
+              </div>
               </div>
           </div>
         </div>

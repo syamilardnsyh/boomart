@@ -26,3 +26,12 @@ Route::post('/logout', [AuthController::class, 'logout']);
 // Update Profil
 Route::get('/profil', [AuthController::class, 'showprofil']);
 Route::post('/profil', [AuthController::class, 'updateprofil']);
+
+// Serba 10k,
+Route::get('/serba10k', [AuthController::class, 'serba10k']);
+
+// Digital
+Route::get('/bookdigital', [AuthController::class, 'bookdigital']);
+
+// Mainan
+Route::get('/mainanhobi', [AuthController::class, 'mainanhobi']);
