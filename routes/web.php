@@ -39,3 +39,8 @@ Route::get('/bookdigital', [AuthController::class, 'bookdigital']);
 
 // Mainan
 Route::get('/mainanhobi', [AuthController::class, 'mainanhobi']);
+
+// tambahkan produk
+Route::post('/produk', [ProdukController::class, 'store'])
+    ->middleware(['auth', 'admin'])
+    ->name('produk.store');

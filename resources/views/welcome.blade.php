@@ -49,6 +49,7 @@
 </div>
 <div class="container mb-4">
     <div class="row g-2">
+        @auth
         @foreach ($produk as $data)
         <div class="col-4">
             <div class="card">
@@ -68,6 +69,7 @@
             </div>
         </div>
         @endforeach
+        @endauth
 <div class="container overflow-auto">
     <div class="row flex-nowrap">
         <div class="col-md-auto mb-3 me-3">

@@ -11,13 +11,7 @@
         <input type="text" placeholder="" name="search">
           <button type="submit"><i class="bi bi-search"></i></button>
             </form>
-
-            <nav id="navmenu" class="navmenu">
-              <ul>
-                <li><a href="/">Home</a></li>          
-              </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
 
       @guest
       <div>
@@ -29,7 +23,7 @@
       @auth
       <form action="/logout" method="POST">
         @csrf
-        <a href="/profil" class="btn btn-primary mr-3">Profil</a>
+        <a href="/profil" class="btn btn-primary mr-3"><i class="bi bi-person-fill"></i></a>
         <button class="btn btn-danger">Logout</button>
       </form>
       @endauth

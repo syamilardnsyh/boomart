@@ -72,9 +72,11 @@
                     <li class="nav-item">
                       <a href="/mainanhobi" class="nav-link">Mainan & Hobi</a>
                     </li>
+                    @auth
                     <li class="nav-item">
                       <a href="{{ route('produk.create') }}" class="nav-link">Tambah Produk</a>
                     </li>
+                    @endauth
                 </div>
               </div>
               </div>

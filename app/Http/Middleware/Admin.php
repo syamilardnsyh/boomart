@@ -22,5 +22,11 @@ class Admin
         }
         
         return redirect('/')->with('danger', 'Anda bukan Admin');
+
+        if (!Auth::user()->is_admin) {
+            return redirect('/')->with('error', 'Akses Ditolak: Hanya admin yang bisa mengakses halaman ini.');
+        }
+
+        return $next($request);
     }
 }
